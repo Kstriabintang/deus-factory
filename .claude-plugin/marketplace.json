@@ -1,0 +1,21 @@
+{
+  "name": "plugin-dewa",
+  "description": "Marketplace resmi Plugin Dewa — pabrik website all-in-one untuk Claude Code: wizard acc satu per satu, hasil company-grade.",
+  "owner": {
+    "name": "Ksatria Bintang Samudra",
+    "email": "145139807+Kstriabintang@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "dewa",
+      "source": "./plugin-dewa",
+      "description": "Pabrik website all-in-one: satu nama website, wizard acc satu per satu, hasil company-grade — lengkap dengan revisi, rebrand, audit, dan deploy.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Ksatria Bintang Samudra"
+      },
+      "license": "MIT",
+      "keywords": ["website", "builder", "wizard", "indonesia", "design-system"]
+    }
+  ]
+}
