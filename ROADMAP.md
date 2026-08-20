@@ -2,7 +2,7 @@
 
 > Pabrik website all-in-one untuk Claude Code. Satu input: nama website. Sisanya: keputusan yang kamu **acc satu per satu**, lalu Dewa membangun website company-grade — dan merawatnya seumur hidup proyek.
 
-**Disusun:** 18 Agustus 2026 · **Target:** 8 milestone (M0–M7) · **Status:** M0 selesai ✅ — berikutnya M1 (Wizard Engine)
+**Disusun:** 18 Agustus 2026 · **Target:** 8 milestone (M0–M7) · **Status:** M0 selesai ✅ · repo publik live — berikutnya M1 (Wizard Engine)
 
 ---
 
@@ -193,6 +193,8 @@ Website yang hidup.
 **Definisi selesai:** siklus penuh terbukti — bangun → revisi 1 section → tambah 1 halaman → rebrand → audit → deploy, semua konsisten.
 
 ### M6 — Packaging & Distribusi *(± 1 sesi)*
+
+> **Progres awal (21 Agustus 2026):** repo publik + marketplace sudah live di [github.com/Kstriabintang/plugin-dewa](https://github.com/Kstriabintang/plugin-dewa) — instal: `/plugin marketplace add Kstriabintang/plugin-dewa` → `/plugin install dewa@plugin-dewa`. Sisa M6: README dwibahasa penuh, changelog, uji instal bersih.
 Dari folder lokal → plugin yang bisa di-install siapa pun.
 - README + dokumentasi pemakaian
 - Versioning semver + changelog
