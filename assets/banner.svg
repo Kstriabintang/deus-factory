@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="Plugin Dewa — pabrik website all-in-one untuk Claude Code">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="Deus — all-in-one website factory for Claude Code">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#101116"/>
@@ -13,7 +13,7 @@
   <rect width="1280" height="340" fill="url(#bg)"/>
   <rect x="16" y="16" width="1248" height="308" fill="none" stroke="#d2a93b" stroke-opacity="0.28"/>
 
-  <!-- sudut emas -->
+  <!-- gold corners -->
   <g stroke="url(#gold)" stroke-width="2.5" fill="none" opacity="0.85">
     <path d="M16 48 V16 H48"/>
     <path d="M1232 16 H1264 V48"/>
@@ -21,33 +21,34 @@
     <path d="M48 324 H16 V292"/>
   </g>
 
-  <!-- trisula -->
+  <!-- trident -->
   <g stroke="url(#gold)" stroke-width="4" fill="none" stroke-linecap="round">
-    <path d="M640 66 V148"/>
-    <path d="M610 76 v14 q0 20 30 25"/>
-    <path d="M670 76 v14 q0 20 -30 25"/>
-    <path d="M620 148 h40"/>
+    <path d="M640 62 V146"/>
+    <path d="M610 72 v14 q0 20 30 25"/>
+    <path d="M670 72 v14 q0 20 -30 25"/>
+    <path d="M620 146 h40"/>
   </g>
   <g fill="url(#gold)">
-    <polygon points="634,68 646,68 640,50"/>
-    <polygon points="604,78 616,78 610,60"/>
-    <polygon points="664,78 676,78 670,60"/>
+    <polygon points="634,64 646,64 640,46"/>
+    <polygon points="604,74 616,74 610,56"/>
+    <polygon points="664,74 676,74 670,56"/>
   </g>
 
-  <!-- berlian dekoratif -->
+  <!-- decorative diamonds + rules -->
   <g fill="#d2a93b">
-    <rect x="146" y="164" width="12" height="12" transform="rotate(45 152 170)" opacity="0.55"/>
-    <rect x="178" y="166" width="8" height="8" transform="rotate(45 182 170)" opacity="0.28"/>
-    <rect x="1122" y="164" width="12" height="12" transform="rotate(45 1128 170)" opacity="0.55"/>
-    <rect x="1094" y="166" width="8" height="8" transform="rotate(45 1098 170)" opacity="0.28"/>
+    <rect x="146" y="166" width="12" height="12" transform="rotate(45 152 172)" opacity="0.55"/>
+    <rect x="178" y="168" width="8" height="8" transform="rotate(45 182 172)" opacity="0.28"/>
+    <rect x="1122" y="166" width="12" height="12" transform="rotate(45 1128 172)" opacity="0.55"/>
+    <rect x="1094" y="168" width="8" height="8" transform="rotate(45 1098 172)" opacity="0.28"/>
   </g>
   <g stroke="#d2a93b" stroke-opacity="0.3" stroke-width="1">
-    <path d="M200 170 H560"/>
-    <path d="M720 170 H1080"/>
+    <path d="M200 172 H520"/>
+    <path d="M760 172 H1080"/>
   </g>
 
-  <!-- teks -->
-  <text x="640" y="204" text-anchor="middle" font-family="'Avenir Next','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" letter-spacing="6" fill="#b8933a">CLAUDE CODE &#183; PLUGIN</text>
-  <text x="640" y="258" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="60" letter-spacing="10" fill="#eae7db">PLUGIN <tspan fill="url(#gold)">DEWA</tspan></text>
-  <text x="640" y="296" text-anchor="middle" font-family="'Avenir Next','Segoe UI',system-ui,sans-serif" font-size="19" fill="#a5a294">Pabrik website all-in-one &#8212; satu nama, acc satu per satu, hasil company-grade.</text>
+  <!-- text -->
+  <text x="640" y="200" text-anchor="middle" font-family="'Avenir Next','Segoe UI',system-ui,sans-serif" font-size="15" font-weight="600" letter-spacing="6" fill="#b8933a">CLAUDE CODE &#183; PLUGIN</text>
+  <text x="640" y="256" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="66" letter-spacing="14" fill="url(#gold)">DEUS</text>
+  <text x="640" y="290" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="16" font-style="italic" letter-spacing="2" fill="#8f8b7d">deus ex machina &#8212; the website that emerges from the machine</text>
+  <text x="640" y="316" text-anchor="middle" font-family="'Avenir Next','Segoe UI',system-ui,sans-serif" font-size="15" fill="#a5a294">One name in &#183; approve one by one &#183; a company-grade website out.</text>
 </svg>

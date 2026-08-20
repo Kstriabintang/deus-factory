@@ -1,255 +1,255 @@
-# ROADMAP — Plugin Dewa 🔱
+# ROADMAP — Deus 🔱
 
-> Pabrik website all-in-one untuk Claude Code. Satu input: nama website. Sisanya: keputusan yang kamu **acc satu per satu**, lalu Dewa membangun website company-grade — dan merawatnya seumur hidup proyek.
+> An all-in-one website factory for Claude Code. One input: a website name. The rest: decisions you **approve one by one**, then Deus builds a company-grade website — and maintains it for the life of the project.
 
-**Disusun:** 18 Agustus 2026 · **Target:** 8 milestone (M0–M7) · **Status:** M0 selesai ✅ · repo publik live — berikutnya M1 (Wizard Engine)
+**Authored:** 18 August 2026 · **Target:** 8 milestones (M0–M7) · **Status:** M0 done ✅ · public repo live — next up M1 (Wizard Engine)
 
 ---
 
-## 1. Visi
+## 1. Vision
 
-Plugin Dewa mengubah Claude Code menjadi pabrik website profesional dengan satu alur:
+Deus turns Claude Code into a professional website factory with a single flow:
 
 ```
-/dewa:buat NamaWebsite
-   → Wizard: ±12 keputusan, kamu acc satu per satu (dengan preview)
-   → Brief: semua keputusanmu jadi satu sumber kebenaran (brief.json)
-   → Design System: brief diterjemahkan jadi token (warna, font, spacing, motion)
-   → Build: pasukan agent spesialis membangun paralel
-   → Audit: QA menyerang hasilnya sebelum kamu lihat
-   → Serah terima + preview
-   → Lifecycle: revisi, tambah halaman, rebrand, konten, deploy — kapan pun
+/deus:build WebsiteName
+   → Wizard: ±12 decisions, you approve one by one (with preview)
+   → Brief: every decision becomes one source of truth (brief.json)
+   → Design System: the brief becomes tokens (color, type, spacing, motion)
+   → Build: a crew of specialist agents builds in parallel
+   → Audit: QA attacks the result before you ever see it
+   → Handoff + preview
+   → Lifecycle: revise, add pages, rebrand, content, deploy — anytime
 ```
 
-Bukan generator template. Setiap acc-mu membentuk design system unik untuk proyek itu.
+Not a template generator. Every approval shapes a unique design system for that project.
 
 ---
 
-## 2. Prinsip Dewa
+## 2. The Deus Principles
 
-Enam prinsip yang membedakan plugin ini dari generator biasa:
+Six principles that set this apart from an ordinary generator:
 
-1. **Satu input, sisanya pilihan.** Kamu tidak pernah disuruh mengetik panjang. Semua keputusan ditawarkan sebagai opsi siap-acc, dengan preview bila memungkinkan. Selalu ada "Other" kalau mau isi sendiri.
-2. **Design-system-first.** Setiap acc menjadi token, bukan nilai hardcode. Ganti tema = ganti token, seluruh situs ikut. Ini yang membuat `/dewa:rebrand` mungkin.
-3. **Konten asli, bukan lorem ipsum.** Copywriting sungguhan sesuai tone brand: headline, CTA, isi section — siap pakai.
-4. **Dalam di tiap domain.** Arsitektur informasi, desain, copywriting, motion, SEO, dan QA masing-masing ditangani agent spesialis — bukan satu AI mengerjakan semua sambil lalu.
-5. **Website hidup setelah jadi.** Brief tersimpan permanen di proyek. Revisi per bagian, halaman baru, rebrand — semua konsisten karena membaca brief yang sama.
-6. **Diaudit sebelum diserahkan.** dewa-qa menguji responsive, aksesibilitas, performa, link, dan SEO secara adversarial. Kamu menerima website yang sudah lulus uji.
-
----
-
-## 3. Pengalaman Pengguna — Alur Wizard
-
-Wizard bertanya **satu keputusan per langkah** (sesuai gayamu: acc satu per satu). Tiap langkah maksimal 4 opsi terkurasi + "Other" untuk isian bebas.
-
-| #  | Langkah              | Bentuk                                        | Preview                        |
-|----|----------------------|-----------------------------------------------|--------------------------------|
-| 1  | Tujuan situs         | Business / Personal / Organisasi / Toko       | —                              |
-| 2  | Bidang & audiens     | Opsi dinamis menyesuaikan langkah 1           | —                              |
-| 3  | Kepribadian brand    | Mewah / Profesional / Hangat / Berani         | —                              |
-| 4  | Stack kode           | HTML+CSS+JS murni / Astro / Next.js           | Cuplikan struktur proyek       |
-| 5  | Palet warna          | 4 palet **dirancang khusus** dari langkah 1–3 | Swatch warna                   |
-| 6  | Tipografi            | Pasangan font display + body                  | Contoh set huruf               |
-| 7  | Gaya UI/UX           | Preset: corporate premium / minimal elegan / bold modern / classic editorial | Mockup ASCII |
-| 8  | Motion               | Tenang / Hidup / Sinematik                    | Deskripsi pola animasi         |
-| 9  | Struktur halaman     | Multi-select halaman yang dibutuhkan          | —                              |
-| 10 | Section per halaman  | Acc susunan section tiap halaman              | Sketsa susunan                 |
-| 11 | Bahasa & tone konten | ID / EN / Dwibahasa + gaya penulisan          | Contoh kalimat                 |
-| 12 | Ringkasan brief      | **Acc final** sebelum build                   | Brief lengkap                  |
-
-Poin penting: opsi palet, font, dan gaya **bukan daftar tetap** — Dewa merancang kandidatnya berdasarkan jawaban langkah sebelumnya. Dua brief berbeda tidak pernah ditawari opsi yang sama persis.
-
-Setelah acc final → build berjalan → laporan audit → serah terima dengan preview.
+1. **One input, everything else a choice.** You're never asked to write long prose. Every decision is offered as ready-to-approve options, with a preview where possible. "Other" is always there if you want to write your own.
+2. **Design-system-first.** Every approval becomes a token, not a hardcoded value. Change the theme = change the tokens, and the whole site follows. This is what makes `/deus:rebrand` possible.
+3. **Real content, not lorem ipsum.** Genuine copywriting in the brand's tone: headlines, CTAs, section body — ready to ship.
+4. **Deep in every domain.** Information architecture, design, copywriting, motion, SEO, and QA are each handled by a specialist agent — not one AI doing everything in passing.
+5. **The website is alive after launch.** The brief is stored permanently in the project. Section revisions, new pages, rebrands — all consistent because they read the same brief.
+6. **Audited before handoff.** deus-qa adversarially tests responsive layout, accessibility, performance, links, and SEO. You receive a website that already passed.
 
 ---
 
-## 4. Arsitektur Plugin
+## 3. User Experience — The Wizard Flow
 
-Struktur sesuai spesifikasi resmi plugin Claude Code (terverifikasi, lihat §8):
+The wizard asks **one decision per step** (your approve-one-by-one style). Each step offers at most 4 curated options + "Other" for free input.
+
+| #  | Step                    | Form                                          | Preview                        |
+|----|-------------------------|-----------------------------------------------|--------------------------------|
+| 1  | Purpose                 | Business / Personal / Organization / Store    | —                              |
+| 2  | Industry & audience     | Dynamic options matching step 1               | —                              |
+| 3  | Brand personality       | Luxurious / Professional / Warm / Bold        | —                              |
+| 4  | Tech stack              | Plain HTML+CSS+JS / Astro / Next.js           | Project structure snippet      |
+| 5  | Color palette           | 4 palettes **designed** from steps 1–3        | Color swatches                 |
+| 6  | Typography              | Display + body font pairing                   | Type specimen                  |
+| 7  | UI/UX style             | Preset: corporate premium / minimal elegant / bold modern / classic editorial | ASCII mockup |
+| 8  | Motion                  | Calm / Lively / Cinematic                     | Animation pattern description  |
+| 9  | Page structure          | Multi-select the pages you need               | —                              |
+| 10 | Sections per page       | Approve the section order of each page        | Section-order sketch           |
+| 11 | Content language & tone | EN / ID / Bilingual + writing style           | Sample sentence                |
+| 12 | Brief summary           | **Final approval** before building            | Full brief                     |
+
+Key point: the palette, font, and style options are **not fixed lists** — Deus designs the candidates from earlier answers. Two different briefs are never offered the exact same options.
+
+After final approval → the build runs → the audit report → handoff with a preview.
+
+---
+
+## 4. Plugin Architecture
+
+Structure follows the official Claude Code plugin spec (verified — see §8):
 
 ```
-plugin-dewa/
+deus/
 ├── .claude-plugin/
-│   └── plugin.json               # manifest: name "dewa", versi, deskripsi
+│   └── plugin.json               # manifest: name "deus", version, description
 ├── skills/
-│   ├── buat/
-│   │   ├── SKILL.md              # wizard utama (dijaga < 500 baris)
+│   ├── build/
+│   │   ├── SKILL.md              # main wizard (kept < 500 lines)
 │   │   └── references/
-│   │       ├── alur-wizard.md    # urutan langkah, aturan opsi & preview
-│   │       ├── preset-gaya.md    # spesifikasi dalam tiap preset UI/UX
-│   │       ├── palet.md          # sistem perancangan palet + aturan kontras
-│   │       ├── tipografi.md      # pustaka pasangan font per kepribadian
-│   │       ├── motion.md         # kosakata animasi: durasi, easing, pola
-│   │       └── konten.md         # formula copywriting per jenis section
-│   ├── status/SKILL.md           # tampilkan brief & progres
-│   ├── revisi/SKILL.md           # ubah satu bagian, alur acc
-│   ├── halaman/SKILL.md          # tambah halaman konsisten
-│   ├── rebrand/SKILL.md          # ganti tema via token
-│   ├── konten/SKILL.md           # perbarui copywriting
-│   ├── preview/SKILL.md          # jalankan lokal + screenshot
-│   ├── audit/SKILL.md            # QA menyeluruh
-│   └── deploy/SKILL.md           # publikasi
+│   │       ├── wizard-flow.md    # step order, option & preview rules
+│   │       ├── style-presets.md  # deep spec of each UI/UX preset
+│   │       ├── palette.md        # palette design system + contrast rules
+│   │       ├── typography.md     # per-personality font-pairing library
+│   │       ├── motion.md         # animation vocabulary: duration, easing, patterns
+│   │       └── content.md        # copywriting formulas per section type
+│   ├── status/SKILL.md           # show brief & progress
+│   ├── revise/SKILL.md           # change one part, approval flow
+│   ├── page/SKILL.md             # add a consistent new page
+│   ├── rebrand/SKILL.md          # swap the theme via tokens
+│   ├── content/SKILL.md          # update copywriting
+│   ├── preview/SKILL.md          # run locally + screenshot
+│   ├── audit/SKILL.md            # full QA sweep
+│   └── deploy/SKILL.md           # publish
 ├── agents/
-│   ├── dewa-arsitek.md
-│   ├── dewa-desainer.md
-│   ├── dewa-penulis.md
-│   ├── dewa-motion.md
-│   ├── dewa-seo.md
-│   └── dewa-qa.md
+│   ├── deus-architect.md
+│   ├── deus-designer.md
+│   ├── deus-writer.md
+│   ├── deus-motion.md
+│   ├── deus-seo.md
+│   └── deus-qa.md
 ├── hooks/
-│   └── hooks.json                # opsional (M5): validator & pemuat brief
+│   └── hooks.json                # optional (M5): validator & brief loader
 ├── scripts/
-│   ├── validasi.sh               # cek cepat HTML/link hasil build
-│   └── screenshot.sh             # bantu /dewa:preview
-└── templates/                    # kerangka awal per stack
+│   ├── validate.sh               # quick HTML/link check of the build
+│   └── screenshot.sh             # helper for /deus:preview
+└── templates/                    # starter skeletons per stack
 ```
 
-**Keputusan arsitektur kunci:**
+**Key architecture decisions:**
 
-- **Wizard jalan di percakapan utama, build didelegasikan ke agent.** Tool pertanyaan interaktif (AskUserQuestion) tidak tersedia di dalam subagent — jadi skill `buat` TIDAK memakai `context: fork`. Setelah brief final di-acc, barulah agent-agent dipanggil paralel.
-- **Brief sebagai sumber kebenaran.** Setiap proyek yang dibangun Dewa punya folder `dewa/` berisi `brief.json` (semua keputusan) dan `design-system.css` (token). Semua skill pasca-build membaca ini — itulah kenapa revisi tidak pernah merusak konsistensi.
-- **Preferensi lintas proyek** disimpan di `${CLAUDE_PLUGIN_DATA}` (folder data permanen plugin) — Dewa v2 bisa berkata "biasanya kamu pilih Astro + gaya minimal, mau sama?"
+- **The wizard runs in the main conversation; the build is delegated to agents.** The interactive question tool (AskUserQuestion) is not available inside subagents — so the `build` skill does NOT use `context: fork`. Only after the brief is finalized are the agents invoked in parallel.
+- **The brief is the source of truth.** Every project Deus builds gets a `deus/` folder holding `brief.json` (all decisions) and `design-system.css` (tokens). Every post-build skill reads these — that's why revisions never break consistency.
+- **Cross-project preferences** are stored in `${CLAUDE_PLUGIN_DATA}` (the plugin's permanent data folder) — Deus v2 could say "you usually pick Astro + a minimal style, same again?"
 
-### Perintah
+### Commands
 
-| Perintah              | Fungsi                                                            |
-|-----------------------|-------------------------------------------------------------------|
-| `/dewa:buat <nama>`   | Wizard lengkap → bangun website dari nol                          |
-| `/dewa:status`        | Tampilkan brief & progres proyek aktif                            |
-| `/dewa:revisi <bagian>` | Ubah satu bagian (dengan alur acc) tanpa merusak yang lain      |
-| `/dewa:halaman <nama>`| Tambah halaman baru yang konsisten dengan design system           |
-| `/dewa:rebrand`       | Ganti warna/font/gaya lewat token — seluruh situs ikut            |
-| `/dewa:konten`        | Perbarui copywriting per section                                  |
-| `/dewa:preview`       | Jalankan lokal + screenshot tiap halaman                          |
-| `/dewa:audit`         | QA menyeluruh: responsive, a11y, SEO, performa, link              |
-| `/dewa:deploy`        | Publikasi ke Vercel / Netlify / GitHub Pages                      |
+| Command                 | Function                                                            |
+|-------------------------|---------------------------------------------------------------------|
+| `/deus:build <name>`    | Full wizard → build a website from scratch                          |
+| `/deus:status`          | Show the active project's brief & progress                          |
+| `/deus:revise <part>`   | Change one part (with an approval flow) without breaking the rest    |
+| `/deus:page <name>`     | Add a new page consistent with the design system                    |
+| `/deus:rebrand`         | Swap colors/fonts/style via tokens — the whole site follows          |
+| `/deus:content`         | Update copywriting per section                                      |
+| `/deus:preview`         | Run locally + screenshot every page                                 |
+| `/deus:audit`           | Full QA: responsive, a11y, SEO, performance, links                  |
+| `/deus:deploy`          | Publish to Vercel / Netlify / GitHub Pages                          |
 
-### Pasukan Agent
+### The Agent Crew
 
-| Agent           | Keahlian (dalam, bukan permukaan)                                        |
-|-----------------|--------------------------------------------------------------------------|
-| `dewa-arsitek`  | Struktur informasi: sitemap, susunan section, alur pengunjung → konversi  |
-| `dewa-desainer` | Design system: token warna/tipografi/spacing, komponen, layout            |
-| `dewa-penulis`  | Copywriting asli: headline, CTA, isi section — mengikuti tone brief       |
-| `dewa-motion`   | Sistem animasi: durasi, easing, reveal, micro-interaction, reduced-motion |
-| `dewa-seo`      | Meta, Open Graph, sitemap.xml, structured data, HTML semantik             |
-| `dewa-qa`       | Penguji adversarial: mencari cacat responsive/a11y/performa/link/SEO      |
-
----
-
-## 5. Fase Pengerjaan (M0 → M7)
-
-### M0 — Fondasi ✅ *(selesai 18 Agustus 2026)*
-Scaffold plugin yang valid dan bisa di-load.
-- Buat struktur folder + `.claude-plugin/plugin.json` (name: `dewa`)
-- Satu skill percobaan untuk membuktikan alur load
-- Siapkan loop pengembangan: `claude --plugin-dir ./plugin-dewa` + `/reload-plugins`
-
-**Definisi selesai:** `claude plugin validate ./plugin-dewa --strict` hijau; `/dewa:buat` muncul di menu slash command.
-
-### M1 — Wizard Engine *(± 1–2 sesi)*
-Jantung pengalaman "acc satu per satu".
-- Skill `buat` + seluruh file `references/` (alur, preset, palet, tipografi, motion, konten)
-- Aturan merancang opsi dinamis per langkah (bukan daftar statis) + preview
-- Output: `dewa/brief.json` yang rapi dan lengkap
-- Langkah ringkasan + acc final
-
-**Definisi selesai:** wizard bisa dijalankan penuh 12 langkah (tanpa build), menghasilkan brief.json yang konsisten untuk 3 skenario uji: company profile, portfolio personal, toko.
-
-### M2 — Mesin Design System *(± 1 sesi)*
-Penerjemah brief → sistem visual.
-- Generator `design-system.css`: token warna (light+dark), skala tipografi, spacing, radius, shadow
-- 4 preset gaya UI/UX terdefinisi **dalam**: anatomi komponen, aturan layout, karakter tiap preset
-- Kosakata motion: durasi, easing, pola reveal, aturan `prefers-reduced-motion`
-- Aturan kontras & aksesibilitas warna bawaan
-
-**Definisi selesai:** dari satu brief.json, design system tergenerasi utuh dan terdokumentasi di folder proyek.
-
-### M3 — Build Engine *(± 2–3 sesi)*
-Dari design system → website utuh. Mulai **satu stack dulu** (statis modern) supaya kualitas dalam, stack lain menyusul.
-- Generator halaman + komponen sesuai preset gaya
-- Copywriting asli seluruh section (via aturan `konten.md`)
-- Aset: logo placeholder SVG, ikon, strategi gambar
-- Responsive penuh (mobile-first), HTML semantik
-- SEO teknis bawaan: meta, OG, sitemap.xml, structured data
-
-**Definisi selesai:** `/dewa:buat` menghasilkan 1 website business lengkap dari nama → wizard → jadi, tanpa intervensi manual.
-
-### M4 — Pasukan Agent *(± 1–2 sesi)*
-Kedalaman per domain + kecepatan paralel.
-- Tulis 6 definisi agent (`agents/*.md`) dengan spesialisasi tajam
-- Orkestrasi: skill `buat` mendelegasikan build ke agent secara paralel
-- `dewa-qa` berjalan wajib di akhir; hasil audit dilampirkan di serah terima
-
-**Definisi selesai:** build M3 dikerjakan oleh pasukan agent; laporan audit menyertai setiap serah terima.
-
-### M5 — Toolkit Pasca-Build *(± 2 sesi)*
-Website yang hidup.
-- Skill: `status`, `revisi`, `halaman`, `rebrand`, `konten`, `preview`, `audit`, `deploy`
-- Semua membaca `dewa/brief.json` — konsistensi terjaga otomatis
-- Hooks opsional: `SessionStart` memuat ringkasan brief bila folder proyek Dewa terdeteksi; validator ringan pasca-edit
-- `deploy`: deteksi CLI yang tersedia (Vercel/Netlify/gh-pages), tuntun sampai live
-
-**Definisi selesai:** siklus penuh terbukti — bangun → revisi 1 section → tambah 1 halaman → rebrand → audit → deploy, semua konsisten.
-
-### M6 — Packaging & Distribusi *(± 1 sesi)*
-
-> **Progres awal (21 Agustus 2026):** repo publik + marketplace sudah live di [github.com/Kstriabintang/plugin-dewa](https://github.com/Kstriabintang/plugin-dewa) — instal: `/plugin marketplace add Kstriabintang/plugin-dewa` → `/plugin install dewa@plugin-dewa`. Sisa M6: README dwibahasa penuh, changelog, uji instal bersih.
-Dari folder lokal → plugin yang bisa di-install siapa pun.
-- README + dokumentasi pemakaian
-- Versioning semver + changelog
-- Repo GitHub + `marketplace.json`
-- Uji instal bersih: `/plugin marketplace add <akun-github>/plugin-dewa` → `/plugin install dewa@plugin-dewa`
-
-**Definisi selesai:** instal dari marketplace di mesin/sesi bersih berhasil; validate --strict hijau.
-
-### M7 — Evolusi v2 *(berkelanjutan)*
-- Memori preferensi lintas proyek (`${CLAUDE_PLUGIN_DATA}`)
-- Stack tambahan: Next.js penuh, Astro content collections
-- Modul: blog, toko (e-commerce), integrasi CMS, formulir + backend ringan
-- Template industri (restoran, agensi, klinik, dst.) sebagai akselerator wizard
-- Dwibahasa penuh (i18n) + integrasi analytics
+| Agent            | Expertise (deep, not surface)                                            |
+|------------------|--------------------------------------------------------------------------|
+| `deus-architect` | Information structure: sitemap, section order, visitor flow → conversion  |
+| `deus-designer`  | Design system: color/type/spacing tokens, components, layout              |
+| `deus-writer`    | Real copywriting: headlines, CTAs, section body — following the brief's tone |
+| `deus-motion`    | Animation system: duration, easing, reveal, micro-interaction, reduced-motion |
+| `deus-seo`       | Meta, Open Graph, sitemap.xml, structured data, semantic HTML             |
+| `deus-qa`        | Adversarial tester: hunts responsive/a11y/performance/link/SEO defects    |
 
 ---
 
-## 6. Perkiraan Total
+## 5. Milestones (M0 → M7)
 
-± **8–11 sesi kerja** sampai M6 (plugin utuh, terdistribusi). Website pertama yang berfungsi sudah lahir di akhir **M3**.
+### M0 — Foundation ✅ *(done 18 August 2026)*
+A valid, loadable plugin scaffold.
+- Folder structure + `.claude-plugin/plugin.json` (name: `deus`)
+- One trial skill to prove the load path
+- Dev loop: `claude --plugin-dir ./deus` + `/reload-plugins`
+
+**Done when:** `claude plugin validate ./deus --strict` is green; `/deus:build` shows in the slash-command menu.
+
+### M1 — Wizard Engine *(± 1–2 sessions)*
+The heart of the approve-one-by-one experience.
+- The `build` skill + all `references/` files (flow, presets, palette, typography, motion, content)
+- Rules for designing dynamic options per step (not static lists) + previews
+- Output: a clean, complete `deus/brief.json`
+- Summary step + final approval
+
+**Done when:** the full 12-step wizard runs (without building), producing a consistent brief.json for 3 test scenarios: company profile, personal portfolio, store.
+
+### M2 — Design-System Engine *(± 1 session)*
+The translator from brief → visual system.
+- `design-system.css` generator: color tokens (light+dark), type scale, spacing, radius, shadow
+- 4 UI/UX presets defined **deeply**: component anatomy, layout rules, character of each preset
+- Motion vocabulary: durations, easing, reveal patterns, `prefers-reduced-motion` rules
+- Built-in color contrast & accessibility rules
+
+**Done when:** from one brief.json, a full design system generates and is documented in the project folder.
+
+### M3 — Build Engine *(± 2–3 sessions)*
+From design system → a full website. Start with **one stack** (modern static) so quality is deep; other stacks follow.
+- Page + component generator per style preset
+- Real copywriting for every section (via `content.md` rules)
+- Assets: placeholder logo SVG, icons, image strategy
+- Fully responsive (mobile-first), semantic HTML
+- Technical SEO built in: meta, OG, sitemap.xml, structured data
+
+**Done when:** `/deus:build` produces one complete business website from name → wizard → done, with no manual intervention.
+
+### M4 — The Agent Crew *(± 1–2 sessions)*
+Per-domain depth + parallel speed.
+- Write 6 agent definitions (`agents/*.md`) with sharp specializations
+- Orchestration: the `build` skill delegates the build to agents in parallel
+- `deus-qa` runs mandatorily at the end; the audit result is attached to the handoff
+
+**Done when:** the M3 build is executed by the agent crew; an audit report accompanies every handoff.
+
+### M5 — Post-Build Toolkit *(± 2 sessions)*
+A living website.
+- Skills: `status`, `revise`, `page`, `rebrand`, `content`, `preview`, `audit`, `deploy`
+- All read `deus/brief.json` — consistency is preserved automatically
+- Optional hooks: `SessionStart` loads the brief summary when a Deus project folder is detected; a light post-edit validator
+- `deploy`: detect the available CLI (Vercel/Netlify/gh-pages), guide it live
+
+**Done when:** the full cycle is proven — build → revise 1 section → add 1 page → rebrand → audit → deploy, all consistent.
+
+### M6 — Packaging & Distribution *(± 1 session)*
+From a local folder → a plugin anyone can install.
+- README + usage docs
+- Semver versioning + changelog
+- GitHub repo + `marketplace.json`
+- Clean-install test: `/plugin marketplace add Kstriabintang/deus-factory` → `/plugin install deus@deus-factory`
+
+> **Early progress (21 August 2026):** the public repo + marketplace are already live at [github.com/Kstriabintang/deus-factory](https://github.com/Kstriabintang/deus-factory) — install: `/plugin marketplace add Kstriabintang/deus-factory` → `/plugin install deus@deus-factory`. Remaining M6: changelog, clean-install verification, first real-site screenshot.
+
+**Done when:** a marketplace install on a clean machine/session succeeds; validate --strict is green.
+
+### M7 — v2 Evolution *(ongoing)*
+- Cross-project preference memory (`${CLAUDE_PLUGIN_DATA}`)
+- Additional stacks: full Next.js, Astro content collections
+- Modules: blog, store (e-commerce), CMS integration, forms + a light backend
+- Industry templates (restaurant, agency, clinic, etc.) as wizard accelerators
+- Full bilingual (i18n) + analytics integration
 
 ---
 
-## 7. Risiko & Mitigasi
+## 6. Overall Estimate
 
-| Risiko                                                   | Mitigasi                                                                 |
-|----------------------------------------------------------|--------------------------------------------------------------------------|
-| Maks 4 opsi per pertanyaan (batas tool)                   | Kurasi 4 opsi terbaik per konteks brief; "Other" selalu tersedia          |
-| Preview hanya untuk pertanyaan single-select              | Langkah multi-select (struktur halaman) memakai deskripsi kaya            |
-| Tool pertanyaan tidak tersedia di subagent                | Wizard di percakapan utama; hanya build yang didelegasikan ke agent       |
-| SKILL.md membengkak (> 500 baris)                         | Pecah ke `references/`; SKILL.md hanya alur inti                          |
-| Scope terlalu besar sekaligus                             | Satu stack dulu sampai dalam (M3), stack lain setelah stabil              |
-| Kualitas tidak konsisten antar-perintah                   | Semua perintah wajib membaca brief; QA wajib sebelum serah terima         |
-| `claude plugin eval` masih early access                   | Uji manual via skenario M1/M3/M5; adopsi eval resmi saat tersedia         |
+± **8–11 work sessions** through M6 (a complete, distributed plugin). The first working website is born at the end of **M3**.
 
 ---
 
-## 8. Fakta Teknis Terverifikasi (dok resmi Claude Code)
+## 7. Risks & Mitigations
 
-- Manifest wajib di `.claude-plugin/plugin.json`; hanya `name` yang required (kebab-case, jadi prefix namespace).
-- Skill: `skills/<nama>/SKILL.md` → terpanggil sebagai `/dewa:<nama>`. Agent: `agents/<nama>.md` → `@dewa:<nama>`.
-- Frontmatter skill mendukung: `description`, `argument-hint`, `allowed-tools`, `context: fork` (dihindari untuk wizard), `model`, `effort`, dll.
-- Placeholder tersedia: `$ARGUMENTS`, `${CLAUDE_PLUGIN_ROOT}` (folder plugin), `${CLAUDE_PLUGIN_DATA}` (data permanen), `${CLAUDE_PROJECT_DIR}`.
-- Dev lokal: `claude --plugin-dir ./plugin-dewa`; perubahan skill/agent/hook cukup `/reload-plugins` (MCP perlu restart).
-- Validasi: `claude plugin validate ./plugin-dewa --strict`.
-- Distribusi: `marketplace.json` di repo → `/plugin marketplace add` → `/plugin install dewa@<marketplace>`.
-- AskUserQuestion: 1–4 pertanyaan per panggilan, 2–4 opsi per pertanyaan, `multiSelect` didukung, preview untuk single-select; **tidak tersedia di subagent**.
-- Hooks tersedia: `SessionStart`, `UserPromptSubmit`, `PreToolUse`, `PostToolUse`, `Stop`, `SubagentStop`, `FileChanged`, dll. via `hooks/hooks.json`.
-
-Sumber: code.claude.com/docs — plugins, plugins-reference, skills, sub-agents, hooks, plugin-marketplaces.
+| Risk                                                    | Mitigation                                                              |
+|----------------------------------------------------------|------------------------------------------------------------------------|
+| Max 4 options per question (tool limit)                   | Curate the best 4 per brief context; "Other" is always available        |
+| Preview only for single-select questions                  | Multi-select steps (page structure) use rich descriptions               |
+| Question tool unavailable in subagents                    | Wizard in the main conversation; only the build is delegated to agents   |
+| SKILL.md bloat (> 500 lines)                              | Split into `references/`; SKILL.md holds only the core flow             |
+| Scope too large at once                                   | One stack deep first (M3), other stacks after it's stable               |
+| Inconsistent quality across commands                      | Every command must read the brief; QA mandatory before handoff          |
+| `claude plugin eval` still early access                   | Manual testing via M1/M3/M5 scenarios; adopt official eval when ready    |
 
 ---
 
-## 9. Langkah Berikutnya
+## 8. Verified Technical Facts (official Claude Code docs)
 
-**M0 selesai** (18 Agu 2026): `plugin-dewa/` berdiri, `claude plugin validate --strict` hijau, `dewa:buat` terbukti terdaftar via smoke test `--plugin-dir`.
+- The manifest is required at `.claude-plugin/plugin.json`; only `name` is required (kebab-case, becomes the namespace prefix).
+- Skill: `skills/<name>/SKILL.md` → invoked as `/deus:<name>`. Agent: `agents/<name>.md` → `@deus:<name>`.
+- Skill frontmatter supports: `description`, `argument-hint`, `allowed-tools`, `context: fork` (avoided for the wizard), `model`, `effort`, etc.
+- Available placeholders: `$ARGUMENTS`, `${CLAUDE_PLUGIN_ROOT}` (plugin folder), `${CLAUDE_PLUGIN_DATA}` (permanent data), `${CLAUDE_PROJECT_DIR}`.
+- Local dev: `claude --plugin-dir ./deus`; skill/agent/hook changes just need `/reload-plugins` (MCP needs a restart).
+- Validation: `claude plugin validate ./deus --strict`.
+- Distribution: `marketplace.json` in the repo → `/plugin marketplace add` → `/plugin install deus@<marketplace>`.
+- AskUserQuestion: 1–4 questions per call, 2–4 options per question, `multiSelect` supported, preview for single-select; **not available in subagents**.
+- Available hooks: `SessionStart`, `UserPromptSubmit`, `PreToolUse`, `PostToolUse`, `Stop`, `SubagentStop`, `FileChanged`, etc. via `hooks/hooks.json`.
 
-**Eksekusi M1 — Wizard Engine:** aktifkan 12 langkah penuh + tulis seluruh `references/` (preset gaya, palet, tipografi, motion, konten) sampai dalam. Bilang saja **"gas M1"**. 🔱
+Source: code.claude.com/docs — plugins, plugins-reference, skills, sub-agents, hooks, plugin-marketplaces.
+
+---
+
+## 9. Next Step
+
+**M0 done** (18 Aug 2026): `deus/` stands, `claude plugin validate --strict` green, `deus:build` proven registered via a `--plugin-dir` smoke test. Public repo + marketplace live (21 Aug 2026).
+
+**Execute M1 — Wizard Engine:** enable all 12 steps + write every `references/` file (style presets, palette, typography, motion, content) to full depth. Just say **"go M1"**. 🔱

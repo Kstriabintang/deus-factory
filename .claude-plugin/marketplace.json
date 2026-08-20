@@ -1,21 +1,22 @@
 {
-  "name": "plugin-dewa",
-  "description": "Marketplace resmi Plugin Dewa — pabrik website all-in-one untuk Claude Code: wizard acc satu per satu, hasil company-grade.",
+  "name": "deus-factory",
+  "description": "Official marketplace for Deus — an all-in-one website factory for Claude Code: approve-one-by-one wizard, company-grade output.",
   "owner": {
     "name": "Ksatria Bintang Samudra",
-    "email": "145139807+Kstriabintang@users.noreply.github.com"
+    "email": "145139807+Kstriabintang@users.noreply.github.com",
+    "url": "https://github.com/Kstriabintang"
   },
   "plugins": [
     {
-      "name": "dewa",
-      "source": "./plugin-dewa",
-      "description": "Pabrik website all-in-one: satu nama website, wizard acc satu per satu, hasil company-grade — lengkap dengan revisi, rebrand, audit, dan deploy.",
+      "name": "deus",
+      "source": "./deus",
+      "description": "All-in-one website factory: one website name, approve-one-by-one wizard, company-grade output — with built-in revise, rebrand, audit, and deploy.",
       "version": "0.1.0",
       "author": {
         "name": "Ksatria Bintang Samudra"
       },
       "license": "MIT",
-      "keywords": ["website", "builder", "wizard", "indonesia", "design-system"]
+      "keywords": ["website", "builder", "wizard", "design-system", "claude-code"]
     }
   ]
 }

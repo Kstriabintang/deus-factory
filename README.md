@@ -1,154 +1,134 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Plugin Dewa — pabrik website all-in-one untuk Claude Code" width="100%">
+<img src="assets/banner.svg" alt="Deus — all-in-one website factory for Claude Code" width="100%">
 
 <br>
 
 [![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-Plugin-d2a93b?style=flat-square&logo=anthropic&logoColor=white&labelColor=131419)](https://code.claude.com/docs/en/plugins)
-[![Versi](https://img.shields.io/badge/versi-0.1.0-131419?style=flat-square&labelColor=d2a93b)](https://github.com/Kstriabintang/plugin-dewa/blob/main/ROADMAP.md)
-[![Lisensi MIT](https://img.shields.io/badge/lisensi-MIT-131419?style=flat-square&labelColor=d2a93b)](LICENSE)
-[![Milestone](https://img.shields.io/badge/milestone-M0%2F8-131419?style=flat-square&labelColor=d2a93b)](https://github.com/Kstriabintang/plugin-dewa/blob/main/ROADMAP.md)
+[![Version](https://img.shields.io/badge/version-0.1.0-131419?style=flat-square&labelColor=d2a93b)](https://github.com/Kstriabintang/deus-factory/blob/main/ROADMAP.md)
+[![License MIT](https://img.shields.io/badge/license-MIT-131419?style=flat-square&labelColor=d2a93b)](LICENSE)
+[![Milestone](https://img.shields.io/badge/milestone-M0%2F8-131419?style=flat-square&labelColor=d2a93b)](https://github.com/Kstriabintang/deus-factory/blob/main/ROADMAP.md)
 
-**Satu input: nama website.** Sisanya keputusan yang kamu **acc satu per satu** —<br>
-lalu Dewa membangun website company-grade dan merawatnya seumur hidup proyek.
+**One input: a website name.** Everything else is a curated decision you **approve one by one** —<br>
+then Deus builds a company-grade website and maintains it for the life of the project.
 
-[Instalasi](#instalasi) · [Kenapa Dewa](#kenapa-dewa) · [Cara Kerja](#cara-kerja) · [Roadmap](#status--roadmap) · [English](#english)
+[Install](#install) · [Why Deus](#why-deus) · [How it works](#how-it-works) · [Roadmap](#status--roadmap) · [Contributing](#contributing)
 
 </div>
 
 ---
 
-## Kenapa Dewa?
+## Why Deus?
 
-Kebanyakan AI membangun website dengan menebak seleramu, lalu menyerahkan hasil sekali jadi. Dewa bekerja sebaliknya:
+Most AI website tools guess your taste and hand back a finished result in one shot. Deus works the other way around — *deus ex machina*, the god who emerges from the machine, one decision at a time:
 
-- **Satu input, sisanya pilihan.** Kamu tidak pernah mengetik penjelasan panjang — setiap keputusan (tujuan, bidang, warna, tipografi, gaya UI, motion, konten) ditawarkan sebagai opsi terkurasi dengan preview, dan kamu tinggal acc.
-- **Opsi dirancang, bukan template.** Palet dan gaya yang ditawarkan dirancang dinamis dari jawaban-jawabanmu sebelumnya. Dua brief berbeda tidak pernah diberi opsi yang sama.
-- **Design-system-first.** Setiap acc menjadi token — bukan nilai hardcode. Ganti tema, seluruh situs ikut.
-- **Konten asli.** Copywriting sungguhan sesuai tone brand-mu. Tidak pernah lorem ipsum.
-- **Dikerjakan pasukan spesialis.** Arsitektur, desain, copywriting, motion, SEO, dan QA masing-masing ditangani agent khusus — dalam, bukan sambil lalu.
-- **Hidup setelah jadi.** Semua keputusanmu tersimpan sebagai `dewa/brief.json`. Revisi satu bagian, tambah halaman, rebrand total — konsistensi terjaga otomatis.
+- **One input, everything else is a choice.** You never write long explanations — each decision (purpose, industry, colors, typography, UI style, motion, content) is offered as curated options with a preview. You just approve.
+- **Options are designed, not templated.** The palettes and styles you're shown are generated dynamically from your earlier answers. Two different briefs are never offered the same options.
+- **Design-system-first.** Every approval becomes a token — not a hardcoded value. Change the theme, the whole site follows.
+- **Real content.** Genuine copywriting in your brand's tone. Never lorem ipsum.
+- **Built by a specialist crew.** Architecture, design, copywriting, motion, SEO, and QA are each handled by a dedicated agent — deep, not in passing.
+- **Alive after launch.** Every decision is saved as `deus/brief.json`. Revise one section, add a page, or rebrand entirely — consistency is preserved automatically.
 
-## Cara Kerja
+## How it works
 
 ```mermaid
 flowchart LR
-    A(["/dewa:buat Nama"]) --> B["Wizard<br>±12 acc"] --> C[("brief.json")] --> D["Design System<br>token"] --> E["Build<br>6 agent"] --> F["Audit QA"] --> G(["Website jadi"])
-    G -.-> H["revisi · rebrand · halaman · deploy"] -.-> C
+    A(["/deus:build Name"]) --> B["Wizard<br>±12 approvals"] --> C[("brief.json")] --> D["Design System<br>tokens"] --> E["Build<br>6 agents"] --> F["QA Audit"] --> G(["Finished site"])
+    G -.-> H["revise · rebrand · add page · deploy"] -.-> C
 ```
 
 <div align="center">
-<img src="assets/wizard-demo.svg" alt="Ilustrasi alur wizard: acc tujuan situs dan arah warna, lalu brief tersimpan" width="760">
-<br><sub><em>Ilustrasi alur wizard — satu keputusan per langkah, kamu yang pegang kendali.</em></sub>
+<img src="assets/wizard-demo.svg" alt="Wizard flow: approving the site purpose and color direction, then the brief is saved" width="760">
+<br><sub><em>The wizard flow — one decision per step, you stay in control.</em></sub>
 </div>
 
 <br>
 
 <details>
-<summary><strong>Lihat 12 langkah wizard selengkapnya</strong></summary>
+<summary><strong>See the full 12-step wizard</strong></summary>
 
 <br>
 
-| #  | Langkah              | Yang di-acc                                                   |
-|----|----------------------|---------------------------------------------------------------|
-| 1  | Tujuan situs         | Business / Personal / Organisasi / Toko                       |
-| 2  | Bidang & audiens     | Opsi dinamis menyesuaikan tujuan                              |
-| 3  | Kepribadian brand    | Mewah / Profesional / Hangat / Berani                         |
-| 4  | Stack kode           | HTML+CSS+JS murni / Astro / Next.js                           |
-| 5  | Palet warna          | 4 palet dirancang khusus dari langkah 1–3 (preview swatch)    |
-| 6  | Tipografi            | Pasangan font display + body (preview huruf)                  |
-| 7  | Gaya UI/UX           | Corporate premium / minimal elegan / bold modern / editorial  |
-| 8  | Motion               | Tenang / Hidup / Sinematik                                    |
-| 9  | Struktur halaman     | Pilih halaman yang dibutuhkan (multi-select)                  |
-| 10 | Section per halaman  | Acc susunan section tiap halaman                              |
-| 11 | Bahasa & tone konten | ID / EN / Dwibahasa + gaya penulisan                          |
-| 12 | Ringkasan brief      | Acc final sebelum build                                       |
+| #  | Step                    | What you approve                                              |
+|----|-------------------------|---------------------------------------------------------------|
+| 1  | Purpose                 | Business / Personal / Organization / Store                    |
+| 2  | Industry & audience     | Dynamic options that match the purpose                       |
+| 3  | Brand personality       | Luxurious / Professional / Warm / Bold                        |
+| 4  | Tech stack              | Plain HTML+CSS+JS / Astro / Next.js                           |
+| 5  | Color palette           | 4 palettes designed from steps 1–3 (swatch preview)          |
+| 6  | Typography              | Display + body font pairing (type specimen)                  |
+| 7  | UI/UX style             | Corporate premium / minimal elegant / bold modern / editorial |
+| 8  | Motion                  | Calm / Lively / Cinematic                                    |
+| 9  | Page structure          | Pick the pages you need (multi-select)                       |
+| 10 | Sections per page       | Approve the section order of each page                       |
+| 11 | Content language & tone | EN / ID / Bilingual + writing style                          |
+| 12 | Brief summary           | Final approval before the build                              |
 
-Selalu tersedia opsi **"Other"** di tiap langkah kalau kamu mau isi sendiri.
+An **"Other"** option is always available at every step if you'd rather write your own.
 
 </details>
 
-## Instalasi
+## Install
 
-> **Prasyarat:** [Claude Code](https://code.claude.com) sudah terpasang.
+> **Prerequisite:** [Claude Code](https://code.claude.com) installed.
 
-Di dalam Claude Code, jalankan:
-
-```
-/plugin marketplace add Kstriabintang/plugin-dewa
-/plugin install dewa@plugin-dewa
-```
-
-Lalu mulai:
+Inside Claude Code, run:
 
 ```
-/dewa:buat NamaWebsiteKamu
+/plugin marketplace add Kstriabintang/deus-factory
+/plugin install deus@deus-factory
+```
+
+Then start:
+
+```
+/deus:build YourWebsiteName
 ```
 
 ## Status & Roadmap
 
-Saat ini **v0.1.0 — tahap awal**. Wizard versi perdana sudah bisa dipakai: menuntunmu memutuskan tujuan, bidang, kepribadian brand, dan arah warna — lalu menghasilkan `dewa/brief.json`, fondasi resmi proyek website-mu.
+Currently **v0.1.0 — early stage**. The first-run wizard already works: it walks you through purpose, industry, brand personality, and color direction — then produces `deus/brief.json`, the official foundation of your website project.
 
-| Milestone | Fokus                                                        | Status         |
+| Milestone | Focus                                                        | Status         |
 |-----------|--------------------------------------------------------------|----------------|
-| M0        | Fondasi — plugin valid + wizard perdana                      | ✅ selesai     |
-| M1        | Wizard Engine penuh 12 langkah                               | 🔨 berikutnya  |
-| M2        | Mesin Design System — brief → token warna/tipografi/motion   | ⬜             |
-| M3        | Build Engine — website utuh pertama                          | ⬜             |
-| M4        | Pasukan 6 agent spesialis                                    | ⬜             |
-| M5        | Toolkit pasca-build — revisi, rebrand, audit, deploy         | ⬜             |
-| M6        | Packaging & distribusi penuh                                 | 🔄 sebagian    |
-| M7        | Evolusi — modul toko, blog, CMS, i18n                        | ⬜             |
+| M0        | Foundation — valid plugin + first-run wizard                 | ✅ done        |
+| M1        | Full 12-step wizard engine                                   | 🔨 next        |
+| M2        | Design-system engine — brief → color/type/motion tokens      | ⬜             |
+| M3        | Build engine — first complete website                        | ⬜             |
+| M4        | Crew of 6 specialist agents                                  | ⬜             |
+| M5        | Post-build toolkit — revise, rebrand, audit, deploy          | ⬜             |
+| M6        | Full packaging & distribution                                | 🔄 partial     |
+| M7        | Evolution — store, blog, CMS, i18n modules                   | ⬜             |
 
-Rencana lengkap dan keputusan arsitektur: **[ROADMAP.md](ROADMAP.md)**
+Full plan and architecture decisions: **[ROADMAP.md](ROADMAP.md)**
 
 <details>
-<summary><strong>Struktur proyek</strong></summary>
+<summary><strong>Project structure</strong></summary>
 
 ```
-plugin-dewa/
-├── .claude-plugin/plugin.json    # manifest (name: dewa)
-├── skills/
-│   └── buat/
-│       ├── SKILL.md              # wizard — alur acc satu per satu
-│       └── references/
-│           └── alur-wizard.md    # konstitusi 12 langkah + skema brief.json
-├── agents/                       # M4: dewa-arsitek, dewa-desainer, dst.
-├── hooks/                        # M5 (opsional)
-├── scripts/                      # M3+: validasi & screenshot
-└── templates/                    # M3: kerangka per stack
+deus/
+├── .claude-plugin/plugin.json    # manifest (name: deus)
+└── skills/
+    └── build/
+        ├── SKILL.md              # wizard — approve-one-by-one flow
+        └── references/
+            └── wizard-flow.md    # 12-step constitution + brief.json schema
 ```
 
-Mode pengembangan lokal: lihat [plugin-dewa/README.md](plugin-dewa/README.md)
+Local development mode: see [deus/README.md](deus/README.md)
 
 </details>
 
-## Berkontribusi
+## Contributing
 
-Menemukan bug atau punya ide? Buka [issue](https://github.com/Kstriabintang/plugin-dewa/issues) — masukan sangat diterima, terutama dari kamu yang mencoba wizard-nya di kasus nyata.
+Found a bug or have an idea? Open an [issue](https://github.com/Kstriabintang/deus-factory/issues) — feedback is very welcome, especially from anyone trying the wizard on a real project.
 
-## Lisensi
+## License
 
 [MIT](LICENSE) © [Ksatria Bintang Samudra](https://github.com/Kstriabintang)
 
 ---
 
-## English
-
-**Dewa** (Indonesian for *"deity"*) is an all-in-one website factory plugin for [Claude Code](https://code.claude.com). Give it **one input — a website name** — then approve a series of curated decisions one by one: purpose, industry, brand personality, tech stack, color palette, typography, UI style, motion, and content. Every approval becomes part of a design-system brief (`dewa/brief.json`), which a crew of specialist agents uses to build a company-grade website — and keeps using to revise, rebrand, and deploy it consistently for the life of the project.
-
-**Install** (inside Claude Code):
-
-```
-/plugin marketplace add Kstriabintang/plugin-dewa
-/plugin install dewa@plugin-dewa
-/dewa:buat YourWebsiteName
-```
-
-Currently at an early milestone (v0.1.0 — the first-run wizard produces the project brief; the full 12-step engine, build engine, and post-build toolkit are being built in stages — see the [roadmap](ROADMAP.md)). The wizard is Indonesian-first; bilingual support is planned.
-
----
-
 <div align="center">
-<sub>Dibuat dengan 🔱 oleh <strong>Ksatria Bintang Samudra</strong></sub>
+<sub>Built with 🔱 by <strong>Ksatria Bintang Samudra</strong></sub>
 </div>
