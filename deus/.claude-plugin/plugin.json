@@ -1,8 +1,8 @@
 {
   "name": "deus",
   "displayName": "Deus",
-  "description": "All-in-one website factory: one website name, curated decisions you approve one by one, company-grade output — with built-in revise, rebrand, audit, and deploy.",
-  "version": "0.1.0",
+  "description": "Website wizard for Claude Code: give a website name, approve its purpose, audience, brand personality and color direction one decision at a time, and get a project brief (deus/brief.json). Early release — the website build engine is on the roadmap.",
+  "version": "0.1.1",
   "author": {
     "name": "Ksatria Bintang Samudra",
     "url": "https://github.com/Kstriabintang"

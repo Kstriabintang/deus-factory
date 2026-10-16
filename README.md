@@ -1,16 +1,16 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Deus — all-in-one website factory for Claude Code" width="100%">
+<img src="assets/banner.svg" alt="Deus — approve-one-by-one website wizard for Claude Code" width="100%">
 
 <br>
 
 [![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-Plugin-d2a93b?style=flat-square&logo=anthropic&logoColor=white&labelColor=131419)](https://code.claude.com/docs/en/plugins)
-[![Version](https://img.shields.io/badge/version-0.1.0-131419?style=flat-square&labelColor=d2a93b)](https://github.com/Kstriabintang/deus-factory/blob/main/ROADMAP.md)
+[![Version](https://img.shields.io/badge/version-0.1.1-131419?style=flat-square&labelColor=d2a93b)](https://github.com/Kstriabintang/deus-factory/blob/main/ROADMAP.md)
 [![License MIT](https://img.shields.io/badge/license-MIT-131419?style=flat-square&labelColor=d2a93b)](LICENSE)
 [![Milestone](https://img.shields.io/badge/milestone-M0%2F8-131419?style=flat-square&labelColor=d2a93b)](https://github.com/Kstriabintang/deus-factory/blob/main/ROADMAP.md)
 
-**One input: a website name.** Everything else is a curated decision you **approve one by one** —<br>
-then Deus builds a company-grade website and maintains it for the life of the project.
+**One input: a website name.** Everything else is a curated decision you **approve one by one**.<br>
+Today Deus turns those decisions into a project brief; building the full website is the next stage on the [roadmap](#status--roadmap).
 
 [Install](#install) · [Why Deus](#why-deus) · [How it works](#how-it-works) · [Roadmap](#status--roadmap) · [Contributing](#contributing)
 
@@ -20,16 +20,25 @@ then Deus builds a company-grade website and maintains it for the life of the pr
 
 ## Why Deus?
 
-Most AI website tools guess your taste and hand back a finished result in one shot. Deus works the other way around — *deus ex machina*, the god who emerges from the machine, one decision at a time:
+Most AI website tools guess your taste and hand back a finished result in one shot. Deus works the other way around — *deus ex machina*, the god who emerges from the machine, one decision at a time.
 
-- **One input, everything else is a choice.** You never write long explanations — each decision (purpose, industry, colors, typography, UI style, motion, content) is offered as curated options with a preview. You just approve.
-- **Options are designed, not templated.** The palettes and styles you're shown are generated dynamically from your earlier answers. Two different briefs are never offered the same options.
-- **Design-system-first.** Every approval becomes a token — not a hardcoded value. Change the theme, the whole site follows.
-- **Real content.** Genuine copywriting in your brand's tone. Never lorem ipsum.
-- **Built by a specialist crew.** Architecture, design, copywriting, motion, SEO, and QA are each handled by a dedicated agent — deep, not in passing.
-- **Alive after launch.** Every decision is saved as `deus/brief.json`. Revise one section, add a page, or rebrand entirely — consistency is preserved automatically.
+**Works today (v0.1)**
+
+- **One input, everything else is a choice.** You never write long explanations — each decision is offered as curated options you approve.
+- **Options are designed, not templated.** Each step's options are generated from your earlier answers, so two different briefs are never offered the same options.
+- **A brief you keep.** Every approval is saved to `deus/brief.json`, the project's single source of truth.
+
+**On the roadmap**
+
+- **The full 12-step wizard** — stack, typography, UI style, motion, pages, sections, and content tone.
+- **Design-system-first build.** Every approval becomes a token, not a hardcoded value. Change the theme, the whole site follows.
+- **Real content.** Genuine copywriting in your brand's tone, never lorem ipsum.
+- **A specialist crew.** Architecture, design, copywriting, motion, SEO, and QA, each handled by a dedicated agent.
+- **Alive after launch.** Revise one section, add a page, or rebrand — consistency preserved through the brief.
 
 ## How it works
+
+The target pipeline is below. **v0.1 implements the first stage** — the wizard and `brief.json`; everything after it is in development.
 
 ```mermaid
 flowchart LR
@@ -72,7 +81,13 @@ An **"Other"** option is always available at every step if you'd rather write yo
 
 > **Prerequisite:** [Claude Code](https://code.claude.com) installed.
 
-Inside Claude Code, run:
+Inside Claude Code 2.1.275 or later, run:
+
+```
+/plugin install deus --marketplace Kstriabintang/deus-factory
+```
+
+On any version:
 
 ```
 /plugin marketplace add Kstriabintang/deus-factory
@@ -87,7 +102,7 @@ Then start:
 
 ## Status & Roadmap
 
-Currently **v0.1.0 — early stage**. The first-run wizard already works: it walks you through purpose, industry, brand personality, and color direction — then produces `deus/brief.json`, the official foundation of your website project.
+Currently **v0.1.1 — early stage**. The first-run wizard already works: it walks you through purpose, industry, brand personality, and color direction — then produces `deus/brief.json`, the official foundation of your website project.
 
 | Milestone | Focus                                                        | Status         |
 |-----------|--------------------------------------------------------------|----------------|

@@ -1,8 +1,23 @@
 # Deus 🔱
 
-The `deus` plugin for Claude Code — an all-in-one website factory. **One input: a website name.** Everything else is a curated decision you approve one by one — then Deus builds a company-grade website and maintains it for the life of the project.
+The `deus` plugin for Claude Code. **One input: a website name.** Everything else is a curated decision you approve one by one. Today Deus turns those decisions into a project brief (`deus/brief.json`); building the website itself is the goal of the roadmap (M3 onward).
 
-**Version:** 0.1.0 (M0 — Foundation) · **Full plan:** [`../ROADMAP.md`](../ROADMAP.md)
+**Version:** 0.1.1 (M0 — Foundation) · **Full plan:** [`../ROADMAP.md`](../ROADMAP.md)
+
+## Install
+
+Inside Claude Code 2.1.275 or later:
+
+```
+/plugin install deus --marketplace Kstriabintang/deus-factory
+```
+
+On any version:
+
+```
+/plugin marketplace add Kstriabintang/deus-factory
+/plugin install deus@deus-factory
+```
 
 ## Milestone status
 
@@ -17,7 +32,7 @@ The `deus` plugin for Claude Code — an all-in-one website factory. **One input
 ## Usage (development mode)
 
 ```bash
-cd "/Users/macbookpro/Documents/Revan Files/GITHUB-ME/Claude Powerfull"
+cd path/to/deus-factory
 claude --plugin-dir ./deus
 ```
 

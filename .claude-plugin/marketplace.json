@@ -1,6 +1,6 @@
 {
   "name": "deus-factory",
-  "description": "Official marketplace for Deus — an all-in-one website factory for Claude Code: approve-one-by-one wizard, company-grade output.",
+  "description": "Official marketplace for Deus — an approve-one-by-one website wizard for Claude Code (early release: produces a project brief; the build engine is on the roadmap).",
   "owner": {
     "name": "Ksatria Bintang Samudra",
     "email": "145139807+Kstriabintang@users.noreply.github.com",
@@ -10,13 +10,13 @@
     {
       "name": "deus",
       "source": "./deus",
-      "description": "All-in-one website factory: one website name, approve-one-by-one wizard, company-grade output — with built-in revise, rebrand, audit, and deploy.",
-      "version": "0.1.0",
+      "description": "Website wizard for Claude Code: give a website name, approve its purpose, audience, brand personality and color direction one decision at a time, and get a project brief (deus/brief.json). Early release — the website build engine is on the roadmap.",
+      "version": "0.1.1",
       "author": {
         "name": "Ksatria Bintang Samudra"
       },
       "license": "MIT",
-      "keywords": ["website", "builder", "wizard", "design-system", "claude-code"]
+      "keywords": ["website", "wizard", "branding", "project-brief", "claude-code"]
     }
   ]
 }

@@ -199,7 +199,7 @@ From a local folder → a plugin anyone can install.
 - GitHub repo + `marketplace.json`
 - Clean-install test: `/plugin marketplace add Kstriabintang/deus-factory` → `/plugin install deus@deus-factory`
 
-> **Early progress (21 August 2026):** the public repo + marketplace are already live at [github.com/Kstriabintang/deus-factory](https://github.com/Kstriabintang/deus-factory) — install: `/plugin marketplace add Kstriabintang/deus-factory` → `/plugin install deus@deus-factory`. Remaining M6: changelog, clean-install verification, first real-site screenshot.
+> **Early progress (21 August 2026):** the public repo + marketplace are already live at [github.com/Kstriabintang/deus-factory](https://github.com/Kstriabintang/deus-factory) — install: `/plugin marketplace add Kstriabintang/deus-factory` → `/plugin install deus@deus-factory`. Remaining M6: clean-install verification, first real-site screenshot. (Changelog added in 0.1.1 — see [CHANGELOG.md](CHANGELOG.md).)
 
 **Done when:** a marketplace install on a clean machine/session succeeds; validate --strict is green.
 
